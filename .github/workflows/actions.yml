@@ -1,0 +1,14 @@
+name: using actions 
+
+on: [push]
+
+jobs:
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: simple js action
+        uses: actions/hello-world-javascript-action@v1
+        with: 
+          who-to-greet: lavish
+            - name: logn greet
+              run: echo "${{ steps.greet.outputs.time }}"
