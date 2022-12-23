@@ -6,7 +6,7 @@ public class MessageUtil {
   }
 
   public String printMessage() {
-    System.out.println(message);
+    System.out.prin(message);
     return message;
   }
 
